@@ -130,7 +130,7 @@ public class UserLogins implements Monitor
 		 * Check whether SERVER_PATH actually points to the server log file.
 		 * Warn if not.
 		 */
-		if (!SERVER_PATH.endsWith("Server.0.0.log") || !SERVER_PATH.endsWith("server.0.0.log"))
+		if (!SERVER_PATH.endsWith("Server.0.0.log") && !SERVER_PATH.endsWith("server.0.0.log"))
 		{
 			log.warning("Plugin misconfigured. Are you sure you've set the log file configuration string to point at the Server.0.0.log file?");
 		}
